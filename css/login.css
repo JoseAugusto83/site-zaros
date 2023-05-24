@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.login-control{
+    width: 900px;
+    margin: 0 auto;
+    height: 550px;
+    border-radius: 25px;
+    display: flex;
+    padding: 10px 30px;
+    border: 2px solid black;
+    justify-content: space-between;
+    background: linear-gradient(white, white) padding-box, linear-gradient(140deg, black, red) border-box;
+    border: 2px solid transparent;
+}
+
+.cadastro-container{
+    width: 45%;
+    
+}
+
+.formulario-container h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.formulario-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    justify-content: center;
+
+}
+
+.formulario-container label{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 8px;
+}
+
+.formulario-container input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid #000000;
+    padding: 0 10px;
+}
+
+.formulario-container button {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 8px 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+
+
+.linha-vertical{
+    border: 1px solid black;
+    height: 90%;
+    margin: auto 0;
+}
+
+.login-container h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+.login-container{
+    width: 45%;
+    margin: auto 0;
+}

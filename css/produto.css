@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.container-produto{
+    width: 1000px;
+    margin: 0 auto;
+    height: 550px;
+    border-radius: 25px;
+    display: flex;
+    padding: 30px 10px;
+    border: 2px solid black;
+    justify-content: space-between;
+    background: linear-gradient(white, white) padding-box, linear-gradient(140deg, black, red) border-box;
+    border: 2px solid transparent;
+}
+
+.container-produto .img {
+    width: 50%;
+    padding: 15px;
+}
+
+.container-main .container-produto .img-main  {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-main .container-produto .img-main img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+
+.container-main .container-produto .container-infos{
+    width: 50%;
+    padding: 15px;
+}
+
+.img  .img-miniatura {
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.img .img-miniatura .img-min {
+    width: 20%;
+}
+
+.img .img-miniatura .img-min img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.container-infos .infos h2{
+    font-family: 'roboto';
+    font-size: 45px;
+}
+
+.container-infos .infos h3{
+    font-family: 'roboto';
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.container-infos .infos .descricao{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.container-infos .infos .size-title{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+
+.container-infos .infos .sizes{
+    display: flex;
+}
+
+.container-infos .infos .sizes .size{
+    padding: 12px;
+    background-color: #7777;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+
+.container-infos .infos .sizes .size p{
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
