@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.car-container{
+    width: 70%;
+
+    min-height: 80%;
+    border-radius: 25px;
+
+    padding: 30px 40px;
+    border: 2px solid black;
+    overflow: hidden;
+    background: linear-gradient(white, white) padding-box, linear-gradient(140deg, black, red) border-box;
+    border: 2px solid transparent;
+}
+
+.car-container .car-title{
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.produto-cart-container{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    margin: 20px 0;
+    
+    padding: 0 40px;
+    justify-content: space-between;
+}
+
+.produto-cart-container .image-desc{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.produto-cart-container .image-desc img{
+    height: 100%    ;
+    margin-right: 15px;
+    object-fit: contain;
+    
+}
+
+.produto-cart-container .desc p{
+    font-family: 'Inter', sans-serif;
+}
+
+#title-produto{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.produto-cart-container .price p {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+#first{
+    margin-top: 0;
+}

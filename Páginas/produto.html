@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/produto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html">
+                <a href="../index.html">
                     <img src="/img/Screenshot_2-removebg-preview.png" alt="logo do site">
                 </a>
                 <div class="navegacao">
@@ -31,7 +31,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <div class="icons">
                         <a href="login.html"><i class="fa-regular fa-circle-user"></i></a>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                     <h2>Air Force 1</h2>
                     <h3>R$ 799,00</h3>
                     <p class="descricao">O brilho perdura no Nike Air Force 1 '07, o tênis original do basquete que dá um toque de inovação naquilo que você conhece bem.</p>
-                    <p class="size-title">Tamanho</p>
+                    <h2 class="size-title">Tamanho</h2>
                     <div class="sizes">
                         <div class="size" style="margin-left: 0;">
                             <p>38</p>
@@ -84,6 +84,16 @@
                             <p>44</p>
                         </div>
                     </div>
+                    <p class="qtt-title">Quantidade</p>
+                    <div class="button-qtt">
+                        <p class="button-left">-</p>
+                        <p class="qtt">1</p>
+                        <p class="button-right">+</p>
+                    </div>
+                    <div class="add-car">
+                        <button class="add">Adicionar ao carrinho</button>
+                        <button class="back">Voltar</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,5 +102,8 @@
 
 
     <script src="https://kit.fontawesome.com/956ecd195d.js" crossorigin="anonymous"></script>
+    <script type='module' src="JavaScript/produto.js"></script>
+    <script type='module' src="JavaScript/itens.js"></script>
+    <script type="module" src="JavaScript/index.js"></script>
 </body>
 </html>
