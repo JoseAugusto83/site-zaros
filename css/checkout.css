@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.checkout-container{
+    min-width: 1000px;
+    margin: 0 auto;
+    height: 600px;
+    border-radius: 25px;
+    display: flex;
+    padding: 70px 90px;
+    border: 2px solid black;
+    justify-content: space-between;
+    background: linear-gradient(white, white) padding-box, linear-gradient(140deg, black, red) border-box;
+    border: 2px solid transparent; 
+    align-items: center;
+
+}
+
+.checkout-infos{
+    width: 45%;
+}
+
+.checkout-infos h2, p, h3{
+
+    font-family: 'Inter', sans-serif;
+}
+
+.checkout-infos h3, h2{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.checkout-infos h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.checkout-infos h3{
+    font-size: 20px;
+}
+
+.checkout-infos .endereco, .checkout-infos .entrega, .checkout-infos .forma-pagamento{
+    display: flex;
+    padding: 16px 20px;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkout-infos .endereco {
+    margin-bottom: 20px;
+}
+
+.checkout-infos .entrega{
+    margin-bottom: 30px;
+}
+
+.checkout-infos .fa-regular, .fa-solid{
+    font-size: 30px;
+    margin-right: 50px;
+    width: 20px;
+    display: inline-block;
+}
+
+.checkout-container .checkout-infos h3{
+    margin-bottom: 15px;
+}
+
+.checkout-container .checkout-produto{
+    width: 45%;
+    padding: 50px;
+    
+}
+
+.checkout-container .checkout-produto .detalhes-produto{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 35px;
+
+}
+
+.detalhes-produto .imagem-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.detalhes-produto .imagem-container img{
+    width: 50%;
+    display: flex;
+    padding: 10px;
+
+}
+
+.detalhes-produto .price, .frete, .total{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+    align-items: center;
+}
+
+.detalhes-produto p{
+    font-size: 20px;
+}
+
+hr{
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.button-finish{
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 35px;
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#detalhes-title{
+    font-weight: bold;
+}

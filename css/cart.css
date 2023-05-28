@@ -9,6 +9,7 @@
     justify-content: center;
     height: 100vh;
     align-items: center;
+    flex-direction: column;
 }
 
 .car-container{
@@ -71,4 +72,23 @@
 
 #first{
     margin-top: 0;
+}
+
+.container-main .car-container .button-checkout{
+    display: flex ;
+    justify-content: flex-end;
+
+}
+
+.button-checkout a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px 12px;
+    background-color: rgba(128, 128, 128, 0.315);
+    font-family: 'Roboto';
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.467);
+    margin-right: 45px;
+    font-size: 20px;
 }
