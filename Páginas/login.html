@@ -60,16 +60,28 @@
                     <form action="../index.html" class="form-cadastro">
                         <h2>Cadastro</h2>
                         <label for="nome">Nome de usuário</label>
-                        <input type="text" id="nome">
+                        <div class="container-input">
+                            <input type="text" id="nome">
+                            <i class="fa-regular fa-circle-user"></i>
+                        </div>
                         <small class="nome"></small>
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <div class="container-input">
+                            <input type="email" id="email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
                         <small class="email"></small>
                         <label for="numero">Número de celular</label>
-                        <input type="tel" id="tel-number">
+                        <div class="container-input">
+                            <input type="tel" id="tel-number">
+                            <i class="fa-regular fa-lock"></i>
+                        </div>
                         <small class="tel-number"></small>
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha">
+                        <div class="container-input">
+                            <input type="password" id="senha">
+                            <i class="fa-regular fa-user-lock"></i>
+                         </div>
                         <small class="senha"></small>
                         <button type="submit" id="cadastro-button">Cadastrar-se</button>
                     </form>
@@ -81,10 +93,16 @@
                     <h2>LOGIN</h2>
                     <form action="../index.html" class="form-login">
                         <label for="email-login">Email</label>
-                        <input type="email" id="email-login">
+                        <div class="container-input">
+                            <input type="email" id="email-login">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
                         <small class="email-login"></small>
                         <label for="senha-login">Senha</label>
-                        <input type="password" id="senha-login">
+                        <div class="container-input">
+                            <input type="password" id="senha-login">
+                            <i class="fa-regular fa-user-lock"></i>
+                        </div>
                         <small class="senha-login"></small>
                         <button type="submit" id="login-button">Login</button>
                     </form>
@@ -93,8 +111,33 @@
         </div>
     </div>
 
+    <footer>
+        <div class="rodape">
+            <div class="atendimento">
+                <h2 class="title-footer">Atendimento ao cliente</h2>
+                <p>Devolução</p>
+                <p>Suporte</p>
+                <p>Dúvidas</p>
+            </div>
+            <div class="sobre">
+                <h2 class="title-footer">Sobre o site</h2>
+                <p>Market Place de roupas</p>
+                <p>As melhores marcas</p>
+                <p>Produtos diversificados</p>
+            </div>
+            <div class="forma-pagamento">
+                <h2 class="title-footer">Formas de pagamento</h2>
+                <p>Cartão</p>
+                <p>Pix</p>
+                <p>Boleto</p>
+                <p>10x sem juros</p>
+            </div>
+        </div>
+    </footer>  
+
     <script src="../JavaScript/login.js"></script>
     <script src="../JavaScript/index.js"></script>
     <script src="https://kit.fontawesome.com/956ecd195d.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

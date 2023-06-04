@@ -155,7 +155,7 @@ hr{
 
     .container{
         display: block;
-        height: 100vh;
+        height: auto;
     }
 
     .checkout-infos{
@@ -171,7 +171,7 @@ hr{
 @media (max-width: 500px){
     .checkout-container{
         flex-direction: column;
-        width: 340px;
+        width: 330px;
         padding: 30px;
         margin-top: 50px;
         height: auto;
@@ -179,7 +179,7 @@ hr{
 
     .container{
         display: block;
-        height: 100vh;
+        height: auto;
     }
 
     .checkout-infos{
@@ -194,7 +194,7 @@ hr{
     }
 
     .checkout-infos p{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .checkout-produto p{
@@ -204,6 +204,11 @@ hr{
     .button-finish{
         font-size: 16px;
         padding: 12px 30px;
+    }
+
+
+    .checkout-infos .fa-regular, .checkout-infos .fa-solid{
+        margin-right: 30px;
     }
 
     

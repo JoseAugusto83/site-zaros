@@ -62,8 +62,23 @@
     width: 100%;
     height: 50px;
     border: 0.5px solid #000000;
-    padding: 0 10px;
+    padding: 0 10px 0 70px;
     font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+
+.formulario-container .form-cadastro .container-input, .formulario-container .form-login .container-input{
+    position: relative;
+}
+.formulario-container .form-cadastro .container-input .fa-regular, .formulario-container .form-login .container-input .fa-regular{
+    position: absolute;
+    color: black;
+    left: 15px;
+    font-size: 30px;
+    top: 10px;
+    padding-right: 12px;
+    border-right: 2px solid black;
 }
 
 .formulario-container .form-cadastro button, .formulario-container .form-login button {
@@ -113,7 +128,7 @@ small{
 @media (max-width: 900px){
     .login-control{
         flex-direction: column;  
-        width: 340px;
+        width: 330px;
         padding: 0;
         height: auto;
         margin-top: 50px;
@@ -127,7 +142,7 @@ small{
     }
 
     .container{
-        height: 110vh;
+        height: auto;
         display: block;
     }
 
@@ -140,6 +155,10 @@ small{
     .login-container{
         width: 100%;
 
+    }
+
+    .formulario-container{
+        padding: 15px 40px;;
     }
 
 
