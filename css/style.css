@@ -151,3 +151,98 @@ main{
 }
 
 
+.nav-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: black;
+    height: 100px;
+    display: none;
+}
+
+.nav-mobile img{
+    width: 70px;
+}
+
+
+.fa-bars{
+    color: white;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.nav-mobile .fa-cart-shopping{
+    font-size: 40px;
+    display: inline-block;
+}
+
+.nav-mobile .menu{
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.422);
+    width: 100%;
+    left: 0;
+    display: none;
+}
+
+.nav-mobile .menu-aberto{
+    display: flex;
+}
+
+.nav-mobile .menu .menu-display {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    background-color: rgba(0, 0, 0, 0.941);
+    height: 100vh;
+}
+
+.nav-mobile .menu-display input{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid red;
+}
+
+.nav-mobile .menu-display a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+
+
+@media (max-width: 1100px) {
+    .nav-mobile{
+        display: flex;
+        padding: 5px 30px;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1500px) {
+
+    .search-bar div input{
+        width: 250px;
+        height: 45px;
+        border-radius: 20px;    
+    }
+
+    .navegacao{
+        margin-left: 20px;
+    }
+    .navegacao a{
+        padding: 10px 6px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+}

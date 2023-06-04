@@ -10,34 +10,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/cart.css">
-    <title>Zaros</title>
+    <title>Carrinho de compras</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/Screenshot_2-removebg-preview.png" alt="logo do site">
-                </a>
-                <div class="navegacao">
+        <div class="nav-desktop">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <a href="../index.html"><img src="../img/Screenshot_2-removebg-preview.png" alt="logo do site"></a>
+                    </a>
+                    <div class="navegacao">
+                        <a href="">MASCULINO</a>
+                        <a href="">FEMININO</a>
+                        <a href="">INFANTIL</a>
+                        <a href="" class="red">TODOS</a>
+                    </div>  
+                </div>
+                <div class="search-bar">
+                    <div>
+                        <input type="text" placeholder="BUSCAR EM LOJA">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="icons">
+                            <a href="login.html"><i class="fa-regular fa-circle-user"></i></a>
+                            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="nav-mobile">
+            <i class="fa-solid fa-bars"></i>
+            <a href="../index.html"><img src="../img/Screenshot_2-removebg-preview.png" alt="logo do site"></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="menu">
+                <div class="menu-display">
+                    <input type="text" placeholder="BUSCAR EM LOJA">
                     <a href="">MASCULINO</a>
                     <a href="">FEMININO</a>
                     <a href="">INFANTIL</a>
                     <a href="" class="red">TODOS</a>
+                    <a href="login.html">Entrar</a>
                 </div>
             </div>
-            <div class="search-bar">
-                <div>
-                    <input type="text" placeholder="BUSCAR EM LOJA">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="icons">
-                        <a href="../Páginas/login.html"><i class="fa-regular fa-circle-user"></i></a>
-                        <a href="../Páginas/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+        </div>
     </header>
     <div class="container-main">
         <div class="car-container">
@@ -103,4 +120,5 @@
 
 
     <script src="https://kit.fontawesome.com/956ecd195d.js" crossorigin="anonymous"></script>
+    <script src="../JavaScript/index.js"></script>
 </body>

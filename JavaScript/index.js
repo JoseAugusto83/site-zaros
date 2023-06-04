@@ -1,30 +1,14 @@
-export 
-let produtos = document.querySelectorAll(".produtos .produto img");
+let abrirMenu = document.querySelector(".nav-mobile .fa-bars")
+let menuAberto = document.querySelector(".nav-mobile .menu")
+let menuFechado = document.querySelector
 
 
-import jsonObject from "./itens.js"
+abrirMenu.addEventListener("click",abrirMenuMobile)
+menuAberto.addEventListener("click", abrirMenuMobile)
 
-
-
-
-
-
-
-produtos.forEach((item, index) =>{
-    item.setAttribute("src", (jsonObject()[index].img));
-    item.parentNode.parentNode.addEventListener('click', function(){
-        abaProduto(index)
-    })
-
-})
-
-export default function abaProduto(index) {
-    var indexProduto = index
-    console.log(indexProduto)
-    return indexProduto
-    /*var produtoEscolhido = {
-        index: index
+function abrirMenuMobile(event){
+    menuAberto.classList.add("menu-aberto")
+    if(event.target === menuAberto){
+        menuAberto.classList.remove("menu-aberto")
     }
-    console.log(produtoEscolhido)
-    return produtoEscolhido*/
 }

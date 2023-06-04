@@ -11,62 +11,90 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/Screenshot_2-removebg-preview.png" alt="logo do site">
-                </a>
-                <div class="navegacao">
+        <div class="nav-desktop">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <a href="../index.html"><img src="../img/Screenshot_2-removebg-preview.png" alt="logo do site"></a>
+                    </a>
+                    <div class="navegacao">
+                        <a href="">MASCULINO</a>
+                        <a href="">FEMININO</a>
+                        <a href="">INFANTIL</a>
+                        <a href="" class="red">TODOS</a>
+                    </div>  
+                </div>
+                <div class="search-bar">
+                    <div>
+                        <input type="text" placeholder="BUSCAR EM LOJA">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="icons">
+                            <a href="login.html"><i class="fa-regular fa-circle-user"></i></a>
+                            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="nav-mobile">
+            <i class="fa-solid fa-bars"></i>
+            <a href="../index.html"><img src="../img/Screenshot_2-removebg-preview.png" alt="logo do site"></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="menu">
+                <div class="menu-display">
+                    <input type="text" placeholder="BUSCAR EM LOJA">
                     <a href="">MASCULINO</a>
                     <a href="">FEMININO</a>
                     <a href="">INFANTIL</a>
                     <a href="" class="red">TODOS</a>
-                </div>  
-            </div>
-            <div class="search-bar">
-                <div>
-                    <input type="text" placeholder="BUSCAR EM LOJA">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <div class="icons">
-
-                        <a href="../Páginas/login.html"><i class="fa-regular fa-circle-user"></i></a>
-
-                        <a href="../Páginas/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </div>
+                    <a href="login.html">Entrar</a>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <div class="container">
         <div class="login-control">
             <div class="cadastro-container">
                 <div class="formulario-container">
-                    <h2>Cadastro</h2>
-                    <label for="nome">Nome de usuário</label>
-                    <input type="text" id="nome">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                    <label for="numero">Número de celular</label>
-                    <input type="tel" id="tel-number">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha">
-                    <button type="submit" id="cadastro-button">Cadastrar-se</button>
+                    <form action="../index.html" class="form-cadastro">
+                        <h2>Cadastro</h2>
+                        <label for="nome">Nome de usuário</label>
+                        <input type="text" id="nome">
+                        <small class="nome"></small>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <small class="email"></small>
+                        <label for="numero">Número de celular</label>
+                        <input type="tel" id="tel-number">
+                        <small class="tel-number"></small>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha">
+                        <small class="senha"></small>
+                        <button type="submit" id="cadastro-button">Cadastrar-se</button>
+                    </form>
                 </div>
             </div>
             <div class="linha-vertical"></div>
             <div class="login-container">
                 <div class="formulario-container">
                     <h2>LOGIN</h2>
-                    <label for="email-login">Email</label>
-                    <input type="email" id="email-login">
-                    <label for="senha-login">Senha</label>
-                    <input type="password" id="senha-login">
-                    <button type="submit" id="login-button">Login</button>
+                    <form action="../index.html" class="form-login">
+                        <label for="email-login">Email</label>
+                        <input type="email" id="email-login">
+                        <small class="email-login"></small>
+                        <label for="senha-login">Senha</label>
+                        <input type="password" id="senha-login">
+                        <small class="senha-login"></small>
+                        <button type="submit" id="login-button">Login</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="../JavaScript/login.js"></script>
+    <script src="../JavaScript/index.js"></script>
     <script src="https://kit.fontawesome.com/956ecd195d.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@
 .login-control{
     width: 900px;
     margin: 0 auto;
-    height: 550px;
+    min-height: 550px;
     border-radius: 25px;
     display: flex;
     padding: 10px 30px;
@@ -22,6 +22,7 @@
     justify-content: space-between;
     background: linear-gradient(white, white) padding-box, linear-gradient(140deg, black, red) border-box;
     border: 2px solid transparent;
+    align-items: center;
 }
 
 .cadastro-container{
@@ -40,30 +41,33 @@
 .formulario-container{
     display: flex;
     flex-direction: column;
-    padding: 10px 50px;
+    padding: 20px 50px;
     justify-content: center;
 
 }
 
-.formulario-container label{
+.formulario-container .form-login label , .formulario-container .form-cadastro label{
     font-size: 20px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 8px;
+    margin-top: 10px;
+    display: block;
 }
 
 .formulario-container input{
-    margin-bottom: 10px;
+
     border-radius: 10px;
     width: 100%;
     height: 50px;
     border: 0.5px solid #000000;
     padding: 0 10px;
+    font-family: 'Inter', sans-serif;
 }
 
-.formulario-container button {
-    width: 50%;
+.formulario-container .form-cadastro button, .formulario-container .form-login button {
+    width: auto;
     text-align: center;
     margin: 0 auto;
     margin-top: 15px;
@@ -72,13 +76,14 @@
     padding: 8px 18px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+    display: block;
 }
 
 
 
 .linha-vertical{
     border: 1px solid black;
-    height: 90%;
+    height: 450px;
     margin: auto 0;
 }
 
@@ -91,3 +96,52 @@
     width: 45%;
     margin: auto 0;
 }
+
+small{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    margin-top: 2px;
+}
+
+.error{
+    color: red;
+}
+
+
+@media (max-width: 900px){
+    .login-control{
+        flex-direction: column;  
+        width: 340px;
+        padding: 0;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .linha-vertical{
+        border: 1px solid black;
+        width: 80%;
+        height: 0;
+        margin: 20px 0 10px 0;
+    }
+
+    .container{
+        height: 110vh;
+        display: block;
+    }
+
+
+    .cadastro-container{
+        width: 100%;
+        
+    }
+
+    .login-container{
+        width: 100%;
+
+    }
+
+
+}
+
