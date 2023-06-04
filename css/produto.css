@@ -159,6 +159,10 @@
     display: none;
 }
 
+.tamanho-selecionado{
+    background-color: gray !important;
+}
+
 
 @media (max-width: 1000px){
     .container-main .container-produto .img{

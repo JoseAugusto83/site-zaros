@@ -186,6 +186,7 @@ main{
     width: 100%;
     left: 0;
     display: none;
+    z-index: 200;
 }
 
 .nav-mobile .menu-aberto{
