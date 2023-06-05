@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -121,7 +124,7 @@ nav{
 
 .categoria .img, .produto .img{
     height: 330px;
-    width: 300px;
+    width: 220px;
 }
 
 
